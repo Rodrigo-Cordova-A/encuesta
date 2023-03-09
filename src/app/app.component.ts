@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'encuesta';
+  constructor(private dialogRef : MatDialog){
+
+  }
+  openDialog(){
+    this.dialogRef.open(DialogComponent, {
+      width: '400px',
+      backdropClass: 'backdrop-style'
+    });
+  }
+  
 }
