@@ -9,11 +9,17 @@ import { MatCardModule } from "@angular/material/card";
 import { MatRadioModule } from "@angular/material/radio";
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule  } from '@angular/material/dialog';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    Comp1Component,
+    Comp2Component
   ],
   imports: [
     BrowserModule,
@@ -22,10 +28,11 @@ import {MatDialogModule  } from '@angular/material/dialog';
     MatCardModule,
     MatRadioModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
     
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

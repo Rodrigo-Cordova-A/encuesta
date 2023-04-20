@@ -5,6 +5,9 @@
     align-items: flex-start;
   }
   
+  .example-radio-group-label {
+    font-size: large;
+  }
   .example-radio-button {
     margin: 5px;
   }

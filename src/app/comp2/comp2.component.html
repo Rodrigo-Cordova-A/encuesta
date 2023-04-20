@@ -1,0 +1,36 @@
+<div *ngIf="data$ | async as data">
+    <div *ngFor="let mai of spieler$ | async">
+        {{mai.name}}
+    </div>
+    <div>
+        ---
+    </div>
+    <div *ngFor="let mainom of spielername$ | async">
+        {{mainom}}
+    </div>
+    <div>
+        ---
+    </div>
+    <br>
+    <div *ngFor="let mainome of namengefiltered$ | async">
+        {{mainome}} 
+    </div>
+</div>
+
+<!-- <div class="container">
+    <h2>Entrando: <i>{{inputText}}</i></h2>
+</div>
+<div *ngFor="let mai of spieler$ | async">
+    {{mai.name}}
+</div>
+
+<div *ngFor="let mainom of spielername$ | async">
+    {{mainom}}
+</div>
+<br>
+<div *ngFor="let mainome of namengefiltered$ | async">
+    {{mainome}} -->
+<!-- </div> -->
+<!-- <div *ngIf="user$ | async as user">
+    {{ user.name}}
+</div> -->
