@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatRadioChange } from '@angular/material/radio';
+import { ResultadosComponent } from './resultados/resultados.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-preguntas',
@@ -26,6 +28,13 @@ counterb: number = 0;
 counterc: number = 0;
 counterd: number = 0;
 countere: number = 0;
+
+constructor(
+  private dialog: MatDialog,
+
+){
+
+}
 
 onOpinionChange1(event: MatRadioChange): void {
   const selectedOption = event.source.value;
@@ -355,7 +364,22 @@ calcularPromedioYContar(): void {
 
   // Output results
   console.log('Average:', average);
-  console.log('Value Counts:', valueCounts);
+  console.log('Respuestas de izquierda:', valueCounts[-2] || 0);
+  console.log('Respuestas de centro - izquierda:', valueCounts[-1] || 0);
+  console.log('Respuestas de centro:', valueCounts[0] || 0);
+  console.log('Respuestas de centro derecha:', valueCounts[1] || 0);
+  console.log('Respuestas de derecha:', valueCounts[2] || 0);
+
+  const dialogRef = this.dialog.open(ResultadosComponent, {
+    width: '40%',
+    data: { average: average,
+            izquierda: valueCounts[-2] || 0 ,
+            centro_izquierda: valueCounts[-1] || 0 ,
+            centro: valueCounts[0] || 0 ,
+            centro_derecha: valueCounts[1] || 0 ,
+            derecha: valueCounts[2] || 0 }
+
+  });
 }
 
 
