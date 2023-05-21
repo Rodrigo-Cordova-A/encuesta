@@ -22,17 +22,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange1($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El Estado debe tener un papel activo y regulador en la economía.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="1">
+                <mat-radio-button class="respuestab" value=d>
                     El Estado debe tener un papel limitado en la economía y fomentar la libre empresa.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El Estado no debe intervenir en la economía.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El Estado debe ser responsable de todos los sectores económicos.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -43,17 +44,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange2($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     La redistribución de la riqueza es esencial para reducir la desigualdad y proteger a los menos afortunados.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-1">
+                <mat-radio-button class="respuestab" value=b>
                     La redistribución de la riqueza puede ser aceptable en algunos casos, pero no debe ser una política generalizada.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     La redistribución de la riqueza es un obstáculo para la creación de riqueza y la libertad económica.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -64,17 +66,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange3($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El gobierno debe tener un papel activo en la protección de los derechos humanos y las libertades civiles.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-1">
+                <mat-radio-button class="respuestab" value=b>
                     El gobierno debe tener un papel limitado en la protección de los derechos humanos y las libertades civiles.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El gobierno no debe intervenir en la protección de los derechos humanos y las libertades civiles.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     El gobierno debe ser responsable de todos los derechos humanos y las libertades civiles.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -85,17 +88,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange4($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     La inmigración es esencial para la diversidad cultural y económica de un país.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="1">
+                <mat-radio-button class="respuestab" value=d>
                     La inmigración puede ser aceptable en algunos casos, pero debe ser limitada.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     La inmigración es un obstáculo para la seguridad nacional y la estabilidad económica.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -106,17 +110,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange5($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El cambio climático es un problema grave que requiere acciones inmediatas y decisivas.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-1">
+                <mat-radio-button class="respuestab" value=b>
                     El cambio climático es un problema, pero no debería ser una prioridad en la política pública.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El cambio climático no es un problema grave y no requiere acciones inmediatas y decisivas.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -127,17 +132,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange6($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El gobierno debe tener un papel activo en la provisión de la educación y garantizar la igualdad de oportunidades.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-1">
+                <mat-radio-button class="respuestab" value=b>
                     El gobierno debe tener un papel limitado en la educación y permitir la libre elección de la escuela.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="1">
+                <mat-radio-button class="respuestab" value=d>
                     El gobierno no debe intervenir en la educación y permitir la libre elección de la escuela.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El gobierno debe ser responsable de todos los aspectos de la educación.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -148,17 +154,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange7($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     Las mujeres deben tener el derecho a decidir sobre su propio cuerpo, incluyendo el derecho al aborto.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-1">
+                <mat-radio-button class="respuestab" value=b>
                     El aborto debe estar disponible solo en casos específicos, como el riesgo para la vida de la madre o la violación.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El aborto debe ser ilegal en todas las circunstancias.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -169,17 +176,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange8($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El acceso a la atención médica es un derecho fundamental y el gobierno debe garantizar la atención médica universal.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     El sistema de salud debe ser una combinación de atención médica pública y privada, con un enfoque en la eficiencia y la reducción de costos para garantizar que todos puedan acceder a la atención médica necesaria.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="1">
+                <mat-radio-button class="respuestab" value=d>
                     El acceso a la atención médica es importante, pero debe ser provisto por el sector privado
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El acceso a la atención médica debe ser provisto por el sector privado y/o individualmente por cada persona, sin intervención del gobierno.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -190,17 +198,18 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange9($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El derecho al porte de armas debe ser protegido como una libertad individual.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="1">
+                <mat-radio-button class="respuestab" value=d>
                     El derecho al porte de armas debe estar disponible solo para propósitos específicos, como la defensa propia o la caza.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El porte de armas debe ser ilegal en todas las circunstancias.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
@@ -211,84 +220,21 @@
             <mat-radio-group
             aria-labelledby="example-radio-group-label"
             class="example-radio-group"
+            (change)="onOpinionChange10($event)"
             ><br>
-                <mat-radio-button class="respuestab" value="-2">
+                <mat-radio-button class="respuestab" value=a>
                     El matrimonio entre personas del mismo sexo debe ser legalizado y protegido como un derecho civil.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
+                <mat-radio-button class="respuestab" value=e>
                     El matrimonio es una institución sagrada y solo debe ser entre un hombre y una mujer.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     El matrimonio es una cuestión privada y el gobierno no debe estar involucrado.
                 </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
+                <mat-radio-button class="respuestab" value=c>
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
-
-            <label id="example-radio-group-label" style="font-weight: bolder;">
-                ¿Cómo te sientes acerca de la libertad de expresión?
-            </label>
-            <mat-radio-group
-            aria-labelledby="example-radio-group-label"
-            class="example-radio-group"
-            ><br>
-                <mat-radio-button class="respuestab" value="-2">
-                    Debe ser limitada para proteger la moral y la integridad de la sociedad (Autoritarismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
-                    Debe ser protegida incluso si incluye opiniones que considero ofensivas (Liberalismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    Debe ser protegida, pero con ciertas limitaciones para evitar el discurso de odio (Centro)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    No estoy seguro.
-                </mat-radio-button>
-            </mat-radio-group><br>
-
-            <label id="example-radio-group-label" style="font-weight: bolder;">
-                ¿Cuál es tu opinión sobre la legalización de las drogas?
-            </label>
-            <mat-radio-group
-            aria-labelledby="example-radio-group-label"
-            class="example-radio-group"
-            ><br>
-                <mat-radio-button class="respuestab" value="-2">
-                    Debe ser prohibida para proteger la moral y la integridad de la sociedad. (Autoritarismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
-                    Debe ser legalizada para respetar la libertad individual (Liberalismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    Debe ser legalizada con ciertas restricciones para evitar el abuso y el daño a la salud pública (Centro)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    No estoy seguro.
-                </mat-radio-button>
-            </mat-radio-group><br>
-
-            <label id="example-radio-group-label" style="font-weight: bolder;">
-                ¿Qué tan importante es el respeto a la autoridad y las normas establecidas?
-            </label>
-            <mat-radio-group
-            aria-labelledby="example-radio-group-label"
-            class="example-radio-group"
-            ><br>
-                <mat-radio-button class="respuestab" value="-2">
-                    Es muy importante para mantener el orden y la estabilidad (Autoritarismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="2">
-                    Es importante, pero debe ser equilibrado con la libertad individual y los derechos humanos (Liberalismo)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    Es importante, pero debe ser cuestionado y equilibrado con el bienestar y los derechos de la sociedad (Centro)
-                </mat-radio-button>
-                <mat-radio-button class="respuestab" value="0">
-                    No estoy seguro.
-                </mat-radio-button>
-            </mat-radio-group><br>
-
 
             
               <ng-template #dialogTemplate let-dialogRef="dialogRef">

@@ -13,13 +13,15 @@ import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './data.service';
+import { ResultadosComponent } from './preguntas/resultados/resultados.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PreguntasComponent,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
+    ResultadosComponent
   ],
   imports: [
     BrowserModule,
