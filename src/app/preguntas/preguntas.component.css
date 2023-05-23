@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'VAGRoundedStd';
+  src: url('src\assets\fonts\Tipografías\Tipografías_oficiales\VAGRoundedStd-Black.otf') format('opentype');
+  font-weight:bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAGRoundedStd';
+  src: url('src\assets\fonts\Tipografías\Tipografías_oficiales\VAGRoundedStd-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAGRoundedStd';
+  src: url('src\assets\fonts\Tipografías\Tipografías_oficiales\VAGRoundedStd-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
 .example-radio-group {
     display: flex;
     flex-direction: column;
@@ -12,7 +33,7 @@
     margin: 5px;
   }
   :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'VAGRoundedStd-Bold',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
@@ -138,7 +159,7 @@
   }
 
   .card.highlight-card {
-    background-color: #b319d2;
+    background-color: #91278f;
     color: white;
     font-weight: 600;
     border: none;
@@ -204,7 +225,7 @@
   }
 
   .terminal pre {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-family: 'VAGRoundedStd-Bold',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
@@ -275,6 +296,50 @@
     width: 1920px;
   }
 
+  #checkout-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value as needed */
+  }
+  
+  .styled-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled-button:hover {
+      background-color: #0056b3;
+  }
+
+  .styled-button:active {
+      transform: scale(0.95);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .styled-button {
+          font-size: 14px;
+          padding: 8px 16px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .styled-button {
+          font-size: 12px;
+          padding: 6px 12px;
+      }
+  }
+  
+
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
@@ -311,4 +376,6 @@
   }
   .respuestab{
     margin-top: 10px;
+    font-family: 'VAGRoundedStd',sans-serif,Roboto; 
+    font-weight: light
   }
