@@ -28,7 +28,9 @@ counterb: number = 0;
 counterc: number = 0;
 counterd: number = 0;
 countere: number = 0;
+average: number = 0;
 
+profile: string = '';
 constructor(
   private dialog: MatDialog,
 
@@ -361,6 +363,20 @@ calcularPromedioYContar(): void {
       valueCounts[value] = 1;
     }
   }
+    // Set profile based on average value
+    if (average >= -2 && average <= -1.2) {
+      this.profile = 'Obtuviste un perfil de izquierda';
+    } else if (average >= -1.19 && average <= -0.5) {
+      this.profile = 'Obtuviste un perfil de centro-izquierda';
+    } else if (average >= -0.49 && average <= 0.49) {
+      this.profile = 'Obtuviste un perfil de centro';
+    } else if (average >= 0.5 && average <= 1.19) {
+      this.profile = 'Obtuviste un perfil de centro-derecha';
+    } else if (average >= 1.2 && average <= 2) {
+      this.profile = 'Obtuviste un perfil de derecha';
+    } else {
+      this.profile = 'Perfil desconocido';
+    }
 
   // Output results
   console.log('Average:', average);
@@ -373,6 +389,7 @@ calcularPromedioYContar(): void {
   const dialogRef = this.dialog.open(ResultadosComponent, {
     width: '40%',
     data: { average: average,
+            profile: this.profile,
             izquierda: valueCounts[-2] || 0 ,
             centro_izquierda: valueCounts[-1] || 0 ,
             centro: valueCounts[0] || 0 ,
