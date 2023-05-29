@@ -387,7 +387,7 @@ calcularPromedioYContar(): void {
   console.log('Respuestas de derecha:', valueCounts[2] || 0);
 
   const dialogRef = this.dialog.open(ResultadosComponent, {
-    width: '40%',
+    width: '70%',
     data: { average: average,
             profile: this.profile,
             izquierda: valueCounts[-2] || 0 ,
