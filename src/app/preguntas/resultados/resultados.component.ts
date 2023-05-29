@@ -9,6 +9,11 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dial
 export class ResultadosComponent implements OnInit{
   average:number= this.data.average;
   explicacion: string = '';
+  propuesta1: string = '';
+  propuesta2: string = '';
+  propuesta3: string = '';
+
+
   constructor(
     public dialogRef: MatDialogRef<ResultadosComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
