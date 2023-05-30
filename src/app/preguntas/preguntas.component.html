@@ -235,6 +235,120 @@
                     No estoy seguro.
                 </mat-radio-button>
             </mat-radio-group><br>
+            <h3 style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">¡Veamos si eres un ciudadano actvio!</h3>
+
+            <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                ¿Con qué frecuencia participa en elecciones políticas (ya sea votando o trabajando en la campaña de un candidato)?
+            </label>
+            <mat-radio-group
+            aria-labelledby="example-radio-group-label"
+            class="example-radio-group"
+            (change)="onOpinionChange10($event)"
+            ><br>
+                <mat-radio-button class="respuestab" value=a>
+                    Siempre.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=e>
+                    La mayoría de las veces.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=c>
+                    Raramente.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=c>
+                    Nunca.
+                </mat-radio-button>
+            </mat-radio-group><br>
+
+            <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                ¿Con qué frecuencia asiste a reuniones públicas, como juntas de vecinos o concejos comunitarios?
+            </label>
+            <mat-radio-group
+            aria-labelledby="example-radio-group-label"
+            class="example-radio-group"
+            (change)="onOpinionChange10($event)"
+            ><br>
+                <mat-radio-button class="respuestab" value=a>
+                    Con mucha frecuencia.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=e>
+                    De vez en cuando.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=c>
+                    Raramente.
+                </mat-radio-button>
+                <mat-radio-button class="respuestab" value=c>
+                    Nunca.
+                </mat-radio-button>
+            </mat-radio-group><br>
+
+            <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                    ¿Ha participado alguna vez en una protesta o manifestación política?
+                </label>
+                <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                (change)="onOpinionChange10($event)"
+                ><br>
+                    <mat-radio-button class="respuestab" value=a>
+                        Sí, varias veces.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=e>
+                        Sí, una vez.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, pero estaría dispuesto/a a hacerlo.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, nunca lo haría.
+                    </mat-radio-button>
+                </mat-radio-group><br>
+
+            <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                    ¿Ha contactado a algún funcionario público para expresar su opinión sobre algún tema político o social?
+                </label>
+                <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                (change)="onOpinionChange10($event)"
+                ><br>
+                    <mat-radio-button class="respuestab" value=a>
+                        Sí, varias veces.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=e>
+                         Sí, una vez.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, pero estaría dispuesto/a a hacerlo.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, nunca lo haría.
+                    </mat-radio-button>
+                </mat-radio-group><br>
+
+            <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                <label id="example-radio-group-label" style="font-family: 'VAGRoundedStd',sans-serif,Roboto; font-weight: bolder;">
+                    ¿Ha participado en algún grupo de activismo social o político?
+                </label>
+                <mat-radio-group
+                aria-labelledby="example-radio-group-label"
+                class="example-radio-group"
+                (change)="onOpinionChange10($event)"
+                ><br>
+                    <mat-radio-button class="respuestab" value=a>
+                        Sí, actualmente.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=e>
+                        Sí, en el pasado.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, pero estaría dispuesto/a a hacerlo.
+                    </mat-radio-button>
+                    <mat-radio-button class="respuestab" value=c>
+                        No, nunca lo haría.
+                    </mat-radio-button>
+                </mat-radio-group><br>
             <div style="display: flex; justify-content: center;">
 
             <button mat-fab extended color="accent" (click)="calcularPromedioYContar()">

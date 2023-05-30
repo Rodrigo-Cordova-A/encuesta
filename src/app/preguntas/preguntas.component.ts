@@ -388,6 +388,8 @@ calcularPromedioYContar(): void {
 
   const dialogRef = this.dialog.open(ResultadosComponent, {
     width: '70%',
+    panelClass: 'scrollable-dialog',
+
     data: { average: average,
             profile: this.profile,
             izquierda: valueCounts[-2] || 0 ,

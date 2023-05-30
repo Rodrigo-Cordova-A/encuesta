@@ -4,3 +4,8 @@
     text-align: center;
   
   }
+  .scrollable-dialog {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px); /* Adjust the value as needed */
+  }
+  
