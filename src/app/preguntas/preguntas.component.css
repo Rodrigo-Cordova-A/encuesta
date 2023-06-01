@@ -19,8 +19,8 @@
   font-style: normal;
 }
 
-.scrollable-dialog {
-  overflow-y: auto;
+.scrollable-dialog { 
+  overflow-y: scroll;
   max-height: calc(100vh - 200px); /* Adjust the value as needed */
 }
 

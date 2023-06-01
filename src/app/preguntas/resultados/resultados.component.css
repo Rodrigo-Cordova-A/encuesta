@@ -2,9 +2,16 @@
     background-color:#f7931e;
     color: white;
     text-align: center;
+    font-family: 'VAGRoundedStd',sans-serif,Roboto; 
+    font-weight: bolder ;
   
   }
-  .scrollable-dialog {
+  /* .scrollable-dialog {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px); /* Adjust the value as needed 
+ } */
+  :host {
+    display: block;
     overflow-y: auto;
     max-height: calc(100vh - 200px); /* Adjust the value as needed */
   }
