@@ -23,6 +23,12 @@ resp7: number = 0;
 resp8: number = 0;
 resp9: number = 0;
 resp10: number = 0;
+resp11: number = 0;
+resp12: number = 0;
+resp13: number = 0;
+resp14: number = 0;
+resp15: number = 0;
+
 countera: number = 0;
 counterb: number = 0;
 counterc: number = 0;
@@ -31,6 +37,8 @@ countere: number = 0;
 average: number = 0;
 
 profile: string = '';
+profile2: string = '';
+
 constructor(
   private dialog: MatDialog,
 
@@ -348,11 +356,161 @@ onOpinionChange10(event: MatRadioChange): void {
   this.resp10 = resp1;
   console.log(resp1);
 }
+
+onOpinionChange11(event: MatRadioChange): void {
+  const selectedOption = event.source.value;
+  let resp1: number;
+
+  switch (selectedOption) {
+    case 'a':
+      resp1 = -2;
+      break;
+    case 'b':
+      resp1 = -1;
+      break;
+    case 'c':
+      resp1 = 0;
+      break;
+    case 'd':
+      resp1 = 1;
+      break;
+    case 'e':
+      resp1 = 2;
+      break;
+    default:
+      resp1 = 0;
+      break;
+  }
+
+  this.resp11 = resp1;
+  console.log(resp1);
+}
+
+onOpinionChange12(event: MatRadioChange): void {
+  const selectedOption = event.source.value;
+  let resp1: number;
+
+  switch (selectedOption) {
+    case 'a':
+      resp1 = -2;
+      break;
+    case 'b':
+      resp1 = -1;
+      break;
+    case 'c':
+      resp1 = 0;
+      break;
+    case 'd':
+      resp1 = 1;
+      break;
+    case 'e':
+      resp1 = 2;
+      break;
+    default:
+      resp1 = 0;
+      break;
+  }
+
+  this.resp12 = resp1;
+  console.log(resp1);
+}
+
+onOpinionChange13(event: MatRadioChange): void {
+  const selectedOption = event.source.value;
+  let resp1: number;
+
+  switch (selectedOption) {
+    case 'a':
+      resp1 = -2;
+      break;
+    case 'b':
+      resp1 = -1;
+      break;
+    case 'c':
+      resp1 = 0;
+      break;
+    case 'd':
+      resp1 = 1;
+      break;
+    case 'e':
+      resp1 = 2;
+      break;
+    default:
+      resp1 = 0;
+      break;
+  }
+
+  this.resp13 = resp1;
+  console.log(resp1);
+}
+
+onOpinionChange14(event: MatRadioChange): void {
+  const selectedOption = event.source.value;
+  let resp1: number;
+
+  switch (selectedOption) {
+    case 'a':
+      resp1 = -2;
+      break;
+    case 'b':
+      resp1 = -1;
+      break;
+    case 'c':
+      resp1 = 0;
+      break;
+    case 'd':
+      resp1 = 1;
+      break;
+    case 'e':
+      resp1 = 2;
+      break;
+    default:
+      resp1 = 0;
+      break;
+  }
+
+  this.resp14 = resp1;
+  console.log(resp1);
+}
+
+onOpinionChange15(event: MatRadioChange): void {
+  const selectedOption = event.source.value;
+  let resp1: number;
+
+  switch (selectedOption) {
+    case 'a':
+      resp1 = -2;
+      break;
+    case 'b':
+      resp1 = -1;
+      break;
+    case 'c':
+      resp1 = 0;
+      break;
+    case 'd':
+      resp1 = 1;
+      break;
+    case 'e':
+      resp1 = 2;
+      break;
+    default:
+      resp1 = 0;
+      break;
+  }
+
+  this.resp15 = resp1;
+  console.log(resp1);
+}
+
 calcularPromedioYContar(): void {
   // Calculate average
   const respValues = [this.resp1, this.resp2, this.resp3, this.resp4, this.resp5, this.resp6, this.resp7, this.resp8, this.resp9, this.resp10];
   const sum = respValues.reduce((total, value) => total + value, 0);
   const average = sum / respValues.length;
+
+  const respValues2 = [this.resp11, this.resp12, this.resp13, this.resp14, this.resp15];
+  const sum2 = respValues2.reduce((total, value) => total + value, 0);
+  const average2 = sum2 / respValues2.length;
 
   // Count occurrences
   const valueCounts: { [key: number]: number } = {};
@@ -378,6 +536,13 @@ calcularPromedioYContar(): void {
       this.profile = 'Perfil desconocido';
     }
 
+    // Set profile based on average value
+    if (average2 >= -2 && average2 <= -0.1) {
+      this.profile2 = 'Obtuviste un resultado de ciudadano poco activo.';
+    } else {
+      this.profile2 = 'Eres un ciudadano activo, Felicidades.';
+    }
+
   // Output results
   console.log('Average:', average);
   console.log('Respuestas de izquierda:', valueCounts[-2] || 0);
@@ -391,7 +556,9 @@ calcularPromedioYContar(): void {
     panelClass: 'scrollable-dialog',
 
     data: { average: average,
+            averageciu: average2,
             profile: this.profile,
+            profile2: this.profile2,
             izquierda: valueCounts[-2] || 0 ,
             centro_izquierda: valueCounts[-1] || 0 ,
             centro: valueCounts[0] || 0 ,
